@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="shortcut icon"
+			href="images/twitch logo.png"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Twitch Clone</title>
+	</head>
+	<body>
+		<header class="nav-list">
+			<nav class="nav-bar">
+				<div class="left">
+					<img src="images/twitch logo.png" alt="twitch logo" />
+					<a href="#">Browse</a>
+					<button class="more">⁝</button>
+				</div>
+				<div class="middle">
+					<input type="text" name="search" placeholder="Search" />
+					<img src="images/search-symbol.png" alt="search symbol" />
+				</div>
+				<div class="right">
+					<button class="login-btn">Log In</button>
+					<button class="sign-up-btn">Sign Up</button>
+					<img src="images/user.png" alt="" />
+				</div>
+			</nav>
+		</header>
+
+		<main class="content-container">
+			<aside class="sidebar inline">
+				<h3>
+					recommended channels
+					<span id="left-arrow"
+						><img src="images/swipe-left.png" alt=""
+					/></span>
+					<!-- <span id="right-arrow"
+						><img src="images/swipe-right.png" alt=""
+					/></span> -->
+				</h3>
+				<div class="channel-names">
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p><strong>pokimane</strong> <br />Valorant</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>456.2K</p>
+					</div>
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p>
+							<strong>Asmondgold</strong> <br />World of Warcraft
+						</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>32.5K</p>
+					</div>
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p><strong>Professor Broman</strong> <br />Destiny 2</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>10.1K</p>
+					</div>
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p><strong>Tearex</strong> <br />Resident Evil 4</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>6.2K</p>
+					</div>
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p>
+							<strong>Ms5000 Watts</strong> <br />Genshin Impact
+						</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>3.4K</p>
+					</div>
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p><strong>Valkyrae</strong> <br />Valorant</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>41.3K</p>
+					</div>
+					<div>
+						<img
+							src="images/profile-pic.png"
+							alt="profile picture"
+							id="profile"
+						/>
+						<p><strong>NikkiB</strong> <br />Hogwarts Legacy</p>
+
+						<img
+							src="images/record.png"
+							alt="reording dot"
+							id="dot"
+						/>
+						<p>2.3K</p>
+					</div>
+				</div>
+			</aside>
+
+			<div class="content inline">
+				<h1>Browse</h1>
+				<div class="content-btns">
+					<button>
+						Games
+						<span
+							><img
+								src="images/console.png"
+								alt="game controller"
+						/></span>
+					</button>
+					<button>
+						IRL
+						<span
+							><img src="images/mic.png" alt="microphone"
+						/></span>
+					</button>
+					<button>
+						Music
+						<span
+							><img src="images/headphones.png" alt="headphones"
+						/></span>
+					</button>
+					<button>
+						Esports
+						<span
+							><img src="images/trophy.png" alt="trophy"
+						/></span>
+					</button>
+					<button>
+						Creative
+						<span
+							><img
+								src="images/color-palette.png"
+								alt="paint palette"
+						/></span>
+					</button>
+				</div>
+
+				<div class="categories">
+					<a href="#">Categories</a>
+					<a href="#">Live Channels</a>
+				</div>
+
+				<div class="filter">
+					<div>
+						<label for="tags">Filter by Tag</label>
+						<span>
+							<img src="images/search-symbol.png" alt="" />
+							<input
+								type="text"
+								placeholder="Search Category Tags"
+						/></span>
+					</div>
+					<div>
+						<label for="sort">Sort by</label>
+						<select name="recommended" id="recommended">
+							<option value="rec-item">
+								Recommended For You
+							</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="games">
+					<img src="games/row 1.png" alt="" />
+					<img src="games/row 2.png" alt="" />
+					<img src="games/row 3.png" alt="" />
+					<img src="games/row 4.png" alt="" />
+					<img src="games/row 5.png" alt="" />
+					<img src="games/row 6.png" alt="" />
+				</div>
+			</div>
+
+			<footer class="sign-up">
+				<div>
+					<img src="images/cat-face.png" alt="" />
+					<p>
+						<strong>Join the Twitch community!</strong> Discover the
+						best live streams anywhere.
+					</p>
+				</div>
+				<button>Sign Up</button>
+			</footer>
+		</main>
+	</body>
+</html>
